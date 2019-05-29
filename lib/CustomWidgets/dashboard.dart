@@ -1,4 +1,5 @@
 import 'package:flutter_web/material.dart';
+import 'package:hello_world/CustomWidgets/dashboard_tile.dart';
 
 class MenuDashboard extends StatefulWidget {
   @override
@@ -68,63 +69,31 @@ class _MenuDashboardState extends State<MenuDashboard> {
                 flex: 2,
                 child: Column(
                   children: <Widget>[
-                    Row(
-                      children: <Widget>[
-                        Icon(Icons.developer_mode),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          'Dashboard',
-                          style: TextStyle(color: Colors.white, fontSize: 22),
-                        ),
-                      ],
+                    DashboardTile(
+                      icon: Icon(Icons.developer_mode),
+                      msg: 'Dashboard',
                     ),
                     SizedBox(
                       height: 15.0,
                     ),
-                    Row(
-                      children: <Widget>[
-                        Icon(Icons.verified_user),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          'Manage Users',
-                          style: TextStyle(color: Colors.white, fontSize: 22),
-                        ),
-                      ],
+                    DashboardTile(
+                      icon: Icon(Icons.verified_user),
+                      msg: 'Manage Users',
                     ),
                     SizedBox(
                       height: 15.0,
                     ),
-                    Row(
-                      children: <Widget>[
-                        Icon(Icons.settings),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          'Settings',
-                          style: TextStyle(color: Colors.white, fontSize: 22),
-                        ),
-                      ],
+                    DashboardTile(
+                      icon: Icon(Icons.settings),
+                      msg: 'Settings',
                     ),
                     SizedBox(
                       height: 15.0,
                     ),
-                    Row(
-                      children: <Widget>[
-                        Icon(Icons.data_usage),
-                        SizedBox(
-                          width: 5,
-                        ),
-                        Text(
-                          'View Usage',
-                          style: TextStyle(color: Colors.white, fontSize: 22),
-                        ),
-                      ],
-                    )
+                    DashboardTile(
+                      icon: Icon(Icons.data_usage),
+                      msg: 'View Usage',
+                    ),
                   ],
                 ),
               ),
@@ -184,5 +153,3 @@ class _MenuDashboardState extends State<MenuDashboard> {
     );
   }
 }
-
-//'https://devicemanagament.000webhostapp.com/userimages/1.jpeg'
