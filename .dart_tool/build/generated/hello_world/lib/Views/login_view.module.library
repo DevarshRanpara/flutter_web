@@ -1,0 +1,1 @@
+{"isEntrypoint":true,"deps":["flutter_web|lib/material.dart","hello_world|lib/CustomWidgets/responsive_widget.dart","hello_world|lib/Views/home_view.dart"],"parts":[],"conditionalDeps":[],"sdkDeps":[]}
